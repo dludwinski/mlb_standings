@@ -1,8 +1,9 @@
 #install.packages("rvest")
+ 
 library(rvest)
 require(httr)
 library(sqldf)
-require(ggplot2)
+#require(ggplot2)
 
 #All_standings <- readRDS(url("https://github.com/dludwinski/mlb_standings/blob/main/All_standings.RDS?raw=true"))
 
