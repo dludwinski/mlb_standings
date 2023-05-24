@@ -22,40 +22,7 @@ fluidPage(
         ),
         
         column(12,
-               
-            plotOutput(
-                "AL_East_Graph",
-                width = "100%",
-                height = "400px",
-                click = NULL,
-                dblclick = NULL,
-                hover = NULL,
-                brush = NULL,
-                inline = FALSE
-            ),
-               
-            plotOutput(
-                "AL_Central_Graph",
-                width = "100%",
-                height = "400px",
-                click = NULL,
-                dblclick = NULL,
-                hover = NULL,
-                brush = NULL,
-                inline = FALSE
-            ),
-            plotOutput(
-                "AL_West_Graph",
-                width = "100%",
-                height = "400px",
-                click = NULL,
-                dblclick = NULL,
-                hover = NULL,
-                brush = NULL,
-                inline = FALSE
-            ),
-        
-            plotOutput(
+             plotOutput(
                 "NL_East_Graph",
                 width = "100%",
                 height = "400px",
@@ -78,6 +45,38 @@ fluidPage(
             ),
             plotOutput(
                 "NL_West_Graph",
+                width = "100%",
+                height = "400px",
+                click = NULL,
+                dblclick = NULL,
+                hover = NULL,
+                brush = NULL,
+                inline = FALSE
+            ),
+            
+            plotOutput(
+                "AL_East_Graph",
+                width = "100%",
+                height = "400px",
+                click = NULL,
+                dblclick = NULL,
+                hover = NULL,
+                brush = NULL,
+                inline = FALSE
+            ),
+            plotOutput(
+                "AL_Central_Graph",
+                width = "100%",
+                height = "400px",
+                click = NULL,
+                dblclick = NULL,
+                hover = NULL,
+                brush = NULL,
+                inline = FALSE
+            )
+            ,
+            plotOutput(
+                "AL_West_Graph",
                 width = "100%",
                 height = "400px",
                 click = NULL,

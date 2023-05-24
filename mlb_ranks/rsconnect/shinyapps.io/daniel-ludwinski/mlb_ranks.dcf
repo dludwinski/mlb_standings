@@ -5,10 +5,10 @@ account: daniel-ludwinski
 server: shinyapps.io
 hostUrl: https://api.shinyapps.io/v1
 appId: 9056817
-bundleId: 7189838
+bundleId: 7224960
 url: https://daniel-ludwinski.shinyapps.io/mlb_ranks/
-when: 1683563753.37913
-lastSyncTime: 1683563753.37915
+when: 1684248997.1385
+lastSyncTime: 1684248997.13851
 asMultiple: FALSE
 asStatic: FALSE
 ignoredFiles: 1 year/server.R|1 year/ui.R
