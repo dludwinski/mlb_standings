@@ -164,3 +164,4 @@ All_standings <- All_standings[!duplicated(All_standings), ]
 
 saveRDS(All_standings, file = "All_standings.RDS") 
 
+rm(br_page)

@@ -1,4 +1,35 @@
 
+
+
+
+team_division_colors<-sqldf("SELECT Current_Name, HexColor, Max(W) as MaxW from plot_temp_graph group by Current_Name")
+team_division_colors<-team_division_colors[order(-team_division_colors$MaxW),]
+
+grph_plot_title <- "NL East"
+
+plot_temp_graph$Current_Name <- factor(plot_temp_graph$Current_Name, levels = team_division_colors[,"Current_Name"])
+
+ggplot(plot_temp_graph, aes(date, spread
+                            , group = Current_Name, colour = Current_Name)) + 
+    geom_point(size = 3) +  theme_bw() + ylab("Wins-Losses") + xlab("") +
+    scale_colour_manual(name = "Team", 
+                        values = team_division_colors$HexColor )+ 
+    ggtitle(grph_plot_title) +
+    theme(legend.key.size = unit(1.5, 'cm'),
+          legend.title = element_text(size=20),
+          legend.text = element_text(size=16),
+          plot.title = element_text(size=24),
+          axis.text=element_text(size=14),
+          axis.title=element_text(size=14,face="bold") )   +
+    guides(color = guide_legend(override.aes = list(size=6)))
+
+
+
+missingnames<-sqldf("SELECT Tm, Year, Current_Name from All_standings group by Tm, Year, Current_Name")
+
+
+
+
 #Plots
 
 
